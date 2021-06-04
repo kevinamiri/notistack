@@ -63,7 +63,7 @@
   ],
   "keywords": [
     "notistack",
-    "snackbar",
+    "snackbar"
   ],
   "directories": {
     "example": "examples"
