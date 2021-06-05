@@ -17,7 +17,15 @@ Install my-project with npm
 ```bash 
   npm i republishnotistack109
 ```
-    
+
+
+## Usage/Examples
+
+```javascript
+import { SnackbarProvider } from "republishnotistack109";
+```
+
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
