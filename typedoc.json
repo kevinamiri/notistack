@@ -1,0 +1,5804 @@
+{
+	"id": 0,
+	"name": "@kevinamiri/notistack",
+	"kind": 0,
+	"flags": {},
+	"originalName": "",
+	"children": [
+		{
+			"id": 72,
+			"name": "SnackbarProvider",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"typeParameter": [
+				{
+					"id": 75,
+					"name": "S",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {
+						"isExported": true
+					}
+				},
+				{
+					"id": 76,
+					"name": "SS",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {
+						"isExported": true
+					}
+				},
+				{
+					"id": 121,
+					"name": "S",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {
+						"isExported": true
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 124,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"tags": [
+							{
+								"tag": "deprecated",
+								"text": ""
+							},
+							{
+								"tag": "see",
+								"text": "https://reactjs.org/docs/legacy-context.html\n"
+							}
+						]
+					},
+					"signatures": [
+						{
+							"id": 125,
+							"name": "new SnackbarProvider",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"tags": [
+									{
+										"tag": "deprecated",
+										"text": ""
+									},
+									{
+										"tag": "see",
+										"text": "https://reactjs.org/docs/legacy-context.html\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 126,
+									"name": "props",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "reference",
+														"id": 59,
+														"name": "SnackbarProviderProps"
+													}
+												],
+												"name": "Readonly"
+											},
+											{
+												"type": "reference",
+												"id": 59,
+												"name": "SnackbarProviderProps"
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 72,
+								"name": "SnackbarProvider"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 124,
+								"name": "Component.__constructor"
+							}
+						},
+						{
+							"id": 127,
+							"name": "new SnackbarProvider",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"tags": [
+									{
+										"tag": "deprecated",
+										"text": ""
+									},
+									{
+										"tag": "see",
+										"text": "https://reactjs.org/docs/legacy-context.html\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 128,
+									"name": "props",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"id": 59,
+										"name": "SnackbarProviderProps"
+									}
+								},
+								{
+									"id": 129,
+									"name": "context",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 72,
+								"name": "SnackbarProvider"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 124,
+								"name": "Component.__constructor"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 473,
+							"character": 21
+						},
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 475,
+							"character": 44
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 124,
+						"name": "Component.__constructor"
+					}
+				},
+				{
+					"id": 74,
+					"name": "closeSnackbar",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 261,
+							"character": 17
+						}
+					],
+					"type": {
+						"type": "indexedAccess",
+						"indexType": {
+							"type": "stringLiteral",
+							"value": "closeSnackbar"
+						},
+						"objectType": {
+							"type": "reference",
+							"name": "ProviderContext"
+						}
+					}
+				},
+				{
+					"id": 123,
+					"name": "context",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "If using the new style context, re-declare this in your class to be the\n`React.ContextType` of your `static contextType`.\nShould be used with type annotation or static contextType.",
+						"text": "```ts\nstatic contextType = MyContext\n// For TS pre-3.7:\ncontext!: React.ContextType<typeof MyContext>\n// For TS 3.7 and above:\ndeclare context: React.ContextType<typeof MyContext>\n```\n",
+						"tags": [
+							{
+								"tag": "see",
+								"text": "https://reactjs.org/docs/context.html\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 473,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 123,
+						"name": "Component.context"
+					}
+				},
+				{
+					"id": 73,
+					"name": "enqueueSnackbar",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 260,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "indexedAccess",
+						"indexType": {
+							"type": "stringLiteral",
+							"value": "enqueueSnackbar"
+						},
+						"objectType": {
+							"type": "reference",
+							"name": "ProviderContext"
+						}
+					}
+				},
+				{
+					"id": 150,
+					"name": "props",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 498,
+							"character": 22
+						}
+					],
+					"type": {
+						"type": "intersection",
+						"types": [
+							{
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"id": 59,
+										"name": "SnackbarProviderProps"
+									}
+								],
+								"name": "Readonly"
+							},
+							{
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "reflection",
+										"declaration": {
+											"id": 151,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {
+												"isExported": true
+											},
+											"children": [
+												{
+													"id": 152,
+													"name": "children",
+													"kind": 32,
+													"kindString": "Variable",
+													"flags": {
+														"isExported": true,
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "node_modules/@types/react/index.d.ts",
+															"line": 498,
+															"character": 57
+														}
+													],
+													"type": {
+														"type": "reference",
+														"name": "ReactNode"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Variables",
+													"kind": 32,
+													"children": [
+														152
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "node_modules/@types/react/index.d.ts",
+													"line": 498,
+													"character": 47
+												}
+											]
+										}
+									}
+								],
+								"name": "Readonly"
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 150,
+						"name": "Component.props"
+					}
+				},
+				{
+					"id": 154,
+					"name": "refs",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"tags": [
+							{
+								"tag": "deprecated",
+								"text": "\nhttps://reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 504,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 155,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {
+								"isExported": true
+							},
+							"indexSignature": [
+								{
+									"id": 156,
+									"name": "__index",
+									"kind": 8192,
+									"kindString": "Index signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 157,
+											"name": "key",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "ReactInstance"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "node_modules/@types/react/index.d.ts",
+									"line": 504,
+									"character": 13
+								}
+							]
+						}
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 154,
+						"name": "Component.refs"
+					}
+				},
+				{
+					"id": 153,
+					"name": "state",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 499,
+							"character": 13
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "typeParameter",
+								"name": "S"
+							}
+						],
+						"name": "Readonly"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 153,
+						"name": "Component.state"
+					}
+				},
+				{
+					"id": 122,
+					"name": "contextType",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isStatic": true,
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "If set, `this.context` will be set at runtime to the current value of the given Context.",
+						"text": "Usage:\n\n```ts\ntype MyContext = number\nconst Ctx = React.createContext<MyContext>(0)\n\nclass Foo extends React.Component {\n  static contextType = Ctx\n  context!: React.ContextType<typeof Ctx>\n  render () {\n    return <>My context's value: {this.context}</>;\n  }\n}\n```\n",
+						"tags": [
+							{
+								"tag": "see",
+								"text": "https://reactjs.org/docs/context.html#classcontexttype\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 455,
+							"character": 26
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "any"
+							}
+						],
+						"name": "Context"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 122,
+						"name": "Component.contextType"
+					}
+				},
+				{
+					"id": 101,
+					"name": "UNSAFE_componentWillMount",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"signatures": [
+						{
+							"id": 102,
+							"name": "UNSAFE_componentWillMount",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Called immediately before mounting occurs, and before `Component#render`.\nAvoid introducing any side-effects or subscriptions in this method.",
+								"text": "This method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n",
+								"tags": [
+									{
+										"tag": "deprecated",
+										"text": "16.3, use componentDidMount or the constructor instead"
+									},
+									{
+										"tag": "see",
+										"text": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state"
+									},
+									{
+										"tag": "see",
+										"text": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path\n"
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 101,
+								"name": "DeprecatedLifecycle.UNSAFE_componentWillMount"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 709,
+							"character": 33
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 101,
+						"name": "DeprecatedLifecycle.UNSAFE_componentWillMount"
+					}
+				},
+				{
+					"id": 107,
+					"name": "UNSAFE_componentWillReceiveProps",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"signatures": [
+						{
+							"id": 108,
+							"name": "UNSAFE_componentWillReceiveProps",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.",
+								"text": "Calling `Component#setState` generally does not trigger this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n",
+								"tags": [
+									{
+										"tag": "deprecated",
+										"text": "16.3, use static getDerivedStateFromProps instead"
+									},
+									{
+										"tag": "see",
+										"text": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
+									},
+									{
+										"tag": "see",
+										"text": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 109,
+									"name": "nextProps",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 59,
+												"name": "SnackbarProviderProps"
+											}
+										],
+										"name": "Readonly"
+									}
+								},
+								{
+									"id": 110,
+									"name": "nextContext",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 107,
+								"name": "DeprecatedLifecycle.UNSAFE_componentWillReceiveProps"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 741,
+							"character": 40
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 107,
+						"name": "DeprecatedLifecycle.UNSAFE_componentWillReceiveProps"
+					}
+				},
+				{
+					"id": 116,
+					"name": "UNSAFE_componentWillUpdate",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"signatures": [
+						{
+							"id": 117,
+							"name": "UNSAFE_componentWillUpdate",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Called immediately before rendering when new props or state is received. Not called for the initial render.",
+								"text": "Note: You cannot call `Component#setState` here.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n",
+								"tags": [
+									{
+										"tag": "deprecated",
+										"text": "16.3, use getSnapshotBeforeUpdate instead"
+									},
+									{
+										"tag": "see",
+										"text": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update"
+									},
+									{
+										"tag": "see",
+										"text": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 118,
+									"name": "nextProps",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 59,
+												"name": "SnackbarProviderProps"
+											}
+										],
+										"name": "Readonly"
+									}
+								},
+								{
+									"id": 119,
+									"name": "nextState",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "S"
+											}
+										],
+										"name": "Readonly"
+									}
+								},
+								{
+									"id": 120,
+									"name": "nextContext",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 116,
+								"name": "DeprecatedLifecycle.UNSAFE_componentWillUpdate"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 769,
+							"character": 34
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 116,
+						"name": "DeprecatedLifecycle.UNSAFE_componentWillUpdate"
+					}
+				},
+				{
+					"id": 86,
+					"name": "componentDidCatch",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"signatures": [
+						{
+							"id": 87,
+							"name": "componentDidCatch",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Catches exceptions generated in descendant components. Unhandled exceptions will cause\nthe entire component tree to unmount."
+							},
+							"parameters": [
+								{
+									"id": 88,
+									"name": "error",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "Error"
+									}
+								},
+								{
+									"id": 89,
+									"name": "errorInfo",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "ErrorInfo"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 86,
+								"name": "ComponentLifecycle.componentDidCatch"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 638,
+							"character": 25
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 86,
+						"name": "ComponentLifecycle.componentDidCatch"
+					}
+				},
+				{
+					"id": 77,
+					"name": "componentDidMount",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"signatures": [
+						{
+							"id": 78,
+							"name": "componentDidMount",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Called immediately after a component is mounted. Setting state here will trigger re-rendering."
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 77,
+								"name": "ComponentLifecycle.componentDidMount"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 617,
+							"character": 25
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 77,
+						"name": "ComponentLifecycle.componentDidMount"
+					}
+				},
+				{
+					"id": 94,
+					"name": "componentDidUpdate",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"signatures": [
+						{
+							"id": 95,
+							"name": "componentDidUpdate",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Called immediately after updating occurs. Not called for the initial render.",
+								"text": "The snapshot is only present if getSnapshotBeforeUpdate is present and returns non-null.\n"
+							},
+							"parameters": [
+								{
+									"id": 96,
+									"name": "prevProps",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 59,
+												"name": "SnackbarProviderProps"
+											}
+										],
+										"name": "Readonly"
+									}
+								},
+								{
+									"id": 97,
+									"name": "prevState",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "S"
+											}
+										],
+										"name": "Readonly"
+									}
+								},
+								{
+									"id": 98,
+									"name": "snapshot",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true,
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"id": 76,
+										"name": "SS"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 94,
+								"name": "NewLifecycle.componentDidUpdate"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 680,
+							"character": 26
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 94,
+						"name": "NewLifecycle.componentDidUpdate"
+					}
+				},
+				{
+					"id": 99,
+					"name": "componentWillMount",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"signatures": [
+						{
+							"id": 100,
+							"name": "componentWillMount",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Called immediately before mounting occurs, and before `Component#render`.\nAvoid introducing any side-effects or subscriptions in this method.",
+								"text": "Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n",
+								"tags": [
+									{
+										"tag": "deprecated",
+										"text": "16.3, use componentDidMount or the constructor instead; will stop working in React 17"
+									},
+									{
+										"tag": "see",
+										"text": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state"
+									},
+									{
+										"tag": "see",
+										"text": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path\n"
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 99,
+								"name": "DeprecatedLifecycle.componentWillMount"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 695,
+							"character": 26
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 99,
+						"name": "DeprecatedLifecycle.componentWillMount"
+					}
+				},
+				{
+					"id": 103,
+					"name": "componentWillReceiveProps",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"signatures": [
+						{
+							"id": 104,
+							"name": "componentWillReceiveProps",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.",
+								"text": "Calling `Component#setState` generally does not trigger this method.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n",
+								"tags": [
+									{
+										"tag": "deprecated",
+										"text": "16.3, use static getDerivedStateFromProps instead; will stop working in React 17"
+									},
+									{
+										"tag": "see",
+										"text": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
+									},
+									{
+										"tag": "see",
+										"text": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 105,
+									"name": "nextProps",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 59,
+												"name": "SnackbarProviderProps"
+											}
+										],
+										"name": "Readonly"
+									}
+								},
+								{
+									"id": 106,
+									"name": "nextContext",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 103,
+								"name": "DeprecatedLifecycle.componentWillReceiveProps"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 724,
+							"character": 33
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 103,
+						"name": "DeprecatedLifecycle.componentWillReceiveProps"
+					}
+				},
+				{
+					"id": 84,
+					"name": "componentWillUnmount",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"signatures": [
+						{
+							"id": 85,
+							"name": "componentWillUnmount",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as\ncancelled network requests, or cleaning up any DOM elements created in `componentDidMount`."
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 84,
+								"name": "ComponentLifecycle.componentWillUnmount"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 633,
+							"character": 28
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 84,
+						"name": "ComponentLifecycle.componentWillUnmount"
+					}
+				},
+				{
+					"id": 111,
+					"name": "componentWillUpdate",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"signatures": [
+						{
+							"id": 112,
+							"name": "componentWillUpdate",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Called immediately before rendering when new props or state is received. Not called for the initial render.",
+								"text": "Note: You cannot call `Component#setState` here.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked.\n",
+								"tags": [
+									{
+										"tag": "deprecated",
+										"text": "16.3, use getSnapshotBeforeUpdate instead; will stop working in React 17"
+									},
+									{
+										"tag": "see",
+										"text": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update"
+									},
+									{
+										"tag": "see",
+										"text": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 113,
+									"name": "nextProps",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 59,
+												"name": "SnackbarProviderProps"
+											}
+										],
+										"name": "Readonly"
+									}
+								},
+								{
+									"id": 114,
+									"name": "nextState",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "S"
+											}
+										],
+										"name": "Readonly"
+									}
+								},
+								{
+									"id": 115,
+									"name": "nextContext",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 111,
+								"name": "DeprecatedLifecycle.componentWillUpdate"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 754,
+							"character": 27
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 111,
+						"name": "DeprecatedLifecycle.componentWillUpdate"
+					}
+				},
+				{
+					"id": 143,
+					"name": "forceUpdate",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 144,
+							"name": "forceUpdate",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 145,
+									"name": "callback",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true,
+										"isOptional": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 146,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 147,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"type": {
+																"type": "intrinsic",
+																"name": "void"
+															}
+														}
+													]
+												}
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 143,
+								"name": "Component.forceUpdate"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 490,
+							"character": 19
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 143,
+						"name": "Component.forceUpdate"
+					}
+				},
+				{
+					"id": 90,
+					"name": "getSnapshotBeforeUpdate",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"signatures": [
+						{
+							"id": 91,
+							"name": "getSnapshotBeforeUpdate",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Runs before React applies the result of `render` to the document, and\nreturns an object to be given to componentDidUpdate. Useful for saving\nthings such as scroll position before `render` causes changes to it.",
+								"text": "Note: the presence of getSnapshotBeforeUpdate prevents any of the deprecated\nlifecycle events from running.\n"
+							},
+							"parameters": [
+								{
+									"id": 92,
+									"name": "prevProps",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 59,
+												"name": "SnackbarProviderProps"
+											}
+										],
+										"name": "Readonly"
+									}
+								},
+								{
+									"id": 93,
+									"name": "prevState",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "S"
+											}
+										],
+										"name": "Readonly"
+									}
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "typeParameter",
+										"name": "SS"
+									},
+									{
+										"type": "intrinsic",
+										"name": "null"
+									}
+								]
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 90,
+								"name": "NewLifecycle.getSnapshotBeforeUpdate"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 674,
+							"character": 31
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 90,
+						"name": "NewLifecycle.getSnapshotBeforeUpdate"
+					}
+				},
+				{
+					"id": 148,
+					"name": "render",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 149,
+							"name": "render",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "reference",
+								"name": "ReactNode"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 148,
+								"name": "Component.render"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 491,
+							"character": 14
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 148,
+						"name": "Component.render"
+					}
+				},
+				{
+					"id": 130,
+					"name": "setState",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 131,
+							"name": "setState",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"typeParameter": [
+								{
+									"id": 132,
+									"name": "K",
+									"kind": 131072,
+									"kindString": "Type parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "typeOperator",
+										"operator": "keyof",
+										"target": {
+											"type": "typeParameter",
+											"name": "S"
+										}
+									}
+								}
+							],
+							"parameters": [
+								{
+									"id": 133,
+									"name": "state",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 134,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 135,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"parameters": [
+																{
+																	"id": 136,
+																	"name": "prevState",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "reference",
+																		"typeArguments": [
+																			{
+																				"type": "typeParameter",
+																				"name": "S"
+																			}
+																		],
+																		"name": "Readonly"
+																	}
+																},
+																{
+																	"id": 137,
+																	"name": "props",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "reference",
+																		"typeArguments": [
+																			{
+																				"type": "reference",
+																				"id": 59,
+																				"name": "SnackbarProviderProps"
+																			}
+																		],
+																		"name": "Readonly"
+																	}
+																}
+															],
+															"type": {
+																"type": "union",
+																"types": [
+																	{
+																		"type": "intrinsic",
+																		"name": "null"
+																	},
+																	{
+																		"type": "unknown",
+																		"name": "S"
+																	},
+																	{
+																		"type": "reflection",
+																		"declaration": {
+																			"id": 138,
+																			"name": "__type",
+																			"kind": 65536,
+																			"kindString": "Type literal",
+																			"flags": {
+																				"isExported": true
+																			}
+																		}
+																	}
+																]
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "node_modules/@types/react/index.d.ts",
+															"line": 486,
+															"character": 18
+														}
+													]
+												}
+											},
+											{
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "null"
+													},
+													{
+														"type": "unknown",
+														"name": "S"
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 139,
+															"name": "__type",
+															"kind": 65536,
+															"kindString": "Type literal",
+															"flags": {
+																"isExported": true
+															}
+														}
+													}
+												]
+											}
+										]
+									}
+								},
+								{
+									"id": 140,
+									"name": "callback",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true,
+										"isOptional": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 141,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 142,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"type": {
+																"type": "intrinsic",
+																"name": "void"
+															}
+														}
+													]
+												}
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 130,
+								"name": "Component.setState"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 485,
+							"character": 16
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 130,
+						"name": "Component.setState"
+					}
+				},
+				{
+					"id": 79,
+					"name": "shouldComponentUpdate",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"signatures": [
+						{
+							"id": 80,
+							"name": "shouldComponentUpdate",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Called to determine whether the change in props and state should trigger a re-render.",
+								"text": "`Component` always returns true.\n`PureComponent` implements a shallow comparison on props and state and returns true if any\nprops or states have changed.\n\nIf false is returned, `Component#render`, `componentWillUpdate`\nand `componentDidUpdate` will not be called.\n"
+							},
+							"parameters": [
+								{
+									"id": 81,
+									"name": "nextProps",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 59,
+												"name": "SnackbarProviderProps"
+											}
+										],
+										"name": "Readonly"
+									}
+								},
+								{
+									"id": 82,
+									"name": "nextState",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "S"
+											}
+										],
+										"name": "Readonly"
+									}
+								},
+								{
+									"id": 83,
+									"name": "nextContext",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 79,
+								"name": "ComponentLifecycle.shouldComponentUpdate"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 628,
+							"character": 29
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 79,
+						"name": "ComponentLifecycle.shouldComponentUpdate"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						124
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						74,
+						123,
+						73,
+						150,
+						154,
+						153,
+						122
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						101,
+						107,
+						116,
+						86,
+						77,
+						94,
+						99,
+						103,
+						84,
+						111,
+						143,
+						90,
+						148,
+						130,
+						79
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 259,
+					"character": 29
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"typeArguments": [
+						{
+							"type": "reference",
+							"id": 59,
+							"name": "SnackbarProviderProps"
+						}
+					],
+					"name": "Component"
+				}
+			]
+		},
+		{
+			"id": 4,
+			"name": "IconVariant",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 5,
+					"name": "default",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Icon displayed when variant of a snackbar is set to `default`."
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 50,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "React.ReactNode"
+					}
+				},
+				{
+					"id": 6,
+					"name": "error",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Icon displayed when variant of a snackbar is set to `error`."
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 54,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "React.ReactNode"
+					}
+				},
+				{
+					"id": 9,
+					"name": "info",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Icon displayed when variant of a snackbar is set to `info`."
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 66,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "React.ReactNode"
+					}
+				},
+				{
+					"id": 7,
+					"name": "success",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Icon displayed when variant of a snackbar is set to `success`."
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 58,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "React.ReactNode"
+					}
+				},
+				{
+					"id": 8,
+					"name": "warning",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Icon displayed when variant of a snackbar is set to `warning`."
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 62,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "React.ReactNode"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						5,
+						6,
+						9,
+						7,
+						8
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 46,
+					"character": 28
+				}
+			]
+		},
+		{
+			"id": 52,
+			"name": "OptionsObject",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"comment": {},
+			"children": [
+				{
+					"id": 58,
+					"name": "action",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Callback used for getting action(s). actions are mostly buttons displayed in Snackbar.",
+						"tags": [
+							{
+								"tag": "param",
+								"text": "key of a snackbar\n",
+								"param": "key"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 196,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 183,
+						"name": "SnackbarAction"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 49,
+						"name": "SharedProps.action"
+					}
+				},
+				{
+					"id": 57,
+					"name": "content",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Replace the snackbar. Callback used for displaying entirely customized snackbar.",
+						"tags": [
+							{
+								"tag": "param",
+								"text": "key of a snackbar\n",
+								"param": "key"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 191,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 187,
+						"name": "SnackbarContentCallback"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 48,
+						"name": "SharedProps.content"
+					}
+				},
+				{
+					"id": 53,
+					"name": "key",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Unique identifier to reference a snackbar.",
+						"tags": [
+							{
+								"tag": "default",
+								"text": "random unique string\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 207,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 179,
+						"name": "SnackbarKey"
+					}
+				},
+				{
+					"id": 54,
+					"name": "persist",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Snackbar stays on the screen, unless it is dismissed (programmatically or through user interaction).",
+						"tags": [
+							{
+								"tag": "default",
+								"text": "false\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 212,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "false"
+							},
+							{
+								"type": "intrinsic",
+								"name": "true"
+							}
+						]
+					}
+				},
+				{
+					"id": 56,
+					"name": "preventDuplicate",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Ignores displaying multiple snackbars with the same `message`",
+						"tags": [
+							{
+								"tag": "default",
+								"text": "false\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 186,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "false"
+							},
+							{
+								"type": "intrinsic",
+								"name": "true"
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 47,
+						"name": "SharedProps.preventDuplicate"
+					}
+				},
+				{
+					"id": 55,
+					"name": "variant",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Used to easily display different variant of snackbars. When passed to `SnackbarProvider`\nall snackbars inherit the `variant`, unless you override it in `enqueueSnackbar` options.",
+						"tags": [
+							{
+								"tag": "default",
+								"text": "default\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 181,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 180,
+						"name": "VariantType"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 46,
+						"name": "SharedProps.variant"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						58,
+						57,
+						53,
+						54,
+						56,
+						55
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 202,
+					"character": 30
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"id": 45,
+					"name": "SharedProps"
+				}
+			]
+		},
+		{
+			"id": 158,
+			"name": "ProviderContext",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 164,
+					"name": "closeSnackbar",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 266,
+							"character": 17
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 165,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 166,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 167,
+											"name": "key",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "reference",
+												"id": 179,
+												"name": "SnackbarKey"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.d.ts",
+									"line": 266,
+									"character": 18
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 159,
+					"name": "enqueueSnackbar",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 265,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 160,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 161,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 162,
+											"name": "message",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "reference",
+												"id": 182,
+												"name": "SnackbarMessage"
+											}
+										},
+										{
+											"id": 163,
+											"name": "options",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "reference",
+												"id": 52,
+												"name": "OptionsObject"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 179,
+										"name": "SnackbarKey"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.d.ts",
+									"line": 265,
+									"character": 20
+								}
+							]
+						}
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						164,
+						159
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 264,
+					"character": 32
+				}
+			]
+		},
+		{
+			"id": 45,
+			"name": "SharedProps",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"comment": {},
+			"children": [
+				{
+					"id": 49,
+					"name": "action",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Callback used for getting action(s). actions are mostly buttons displayed in Snackbar.",
+						"tags": [
+							{
+								"tag": "param",
+								"text": "key of a snackbar\n",
+								"param": "key"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 196,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 183,
+						"name": "SnackbarAction"
+					}
+				},
+				{
+					"id": 48,
+					"name": "content",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Replace the snackbar. Callback used for displaying entirely customized snackbar.",
+						"tags": [
+							{
+								"tag": "param",
+								"text": "key of a snackbar\n",
+								"param": "key"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 191,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 187,
+						"name": "SnackbarContentCallback"
+					}
+				},
+				{
+					"id": 47,
+					"name": "preventDuplicate",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Ignores displaying multiple snackbars with the same `message`",
+						"tags": [
+							{
+								"tag": "default",
+								"text": "false\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 186,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "false"
+							},
+							{
+								"type": "intrinsic",
+								"name": "true"
+							}
+						]
+					}
+				},
+				{
+					"id": 46,
+					"name": "variant",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Used to easily display different variant of snackbars. When passed to `SnackbarProvider`\nall snackbars inherit the `variant`, unless you override it in `enqueueSnackbar` options.",
+						"tags": [
+							{
+								"tag": "default",
+								"text": "default\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 181,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 180,
+						"name": "VariantType"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						49,
+						48,
+						47,
+						46
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 175,
+					"character": 28
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reflection",
+					"declaration": {
+						"id": 50,
+						"name": "__type",
+						"kind": 65536,
+						"kindString": "Type literal",
+						"flags": {
+							"isExported": true
+						},
+						"sources": [
+							{
+								"fileName": "src/index.d.ts",
+								"line": 175,
+								"character": 36
+							}
+						]
+					}
+				},
+				{
+					"type": "reflection",
+					"declaration": {
+						"id": 51,
+						"name": "__type",
+						"kind": 65536,
+						"kindString": "Type literal",
+						"flags": {
+							"isExported": true
+						},
+						"sources": [
+							{
+								"fileName": "src/index.d.ts",
+								"line": 175,
+								"character": 68
+							}
+						]
+					}
+				}
+			],
+			"extendedBy": [
+				{
+					"type": "reference",
+					"id": 52,
+					"name": "OptionsObject"
+				},
+				{
+					"type": "reference",
+					"id": 59,
+					"name": "SnackbarProviderProps"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "SnackbarOrigin",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 3,
+					"name": "horizontal",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 43,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "left"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "center"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "right"
+							}
+						]
+					}
+				},
+				{
+					"id": 2,
+					"name": "vertical",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 42,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "top"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "bottom"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						3,
+						2
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 41,
+					"character": 31
+				}
+			]
+		},
+		{
+			"id": 18,
+			"name": "SnackbarProps",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"comment": {},
+			"children": [
+				{
+					"id": 25,
+					"name": "TransitionComponent",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "The component used for the transition. (e.g. Slide, Grow, Zoom, etc.)",
+						"tags": [
+							{
+								"tag": "default",
+								"text": "Slide\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 156,
+							"character": 23
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "reference",
+								"name": "TransitionProps"
+							}
+						],
+						"name": "React.ComponentType"
+					}
+				},
+				{
+					"id": 31,
+					"name": "TransitionProps",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Properties applied to Transition component (e.g. Slide, Grow, Zoom, etc.)"
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 169,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 31,
+						"name": "TransitionProps"
+					}
+				},
+				{
+					"id": 19,
+					"name": "anchorOrigin",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "The anchor of the `Snackbar`.",
+						"tags": [
+							{
+								"tag": "default",
+								"text": "{ horizontal: left, vertical: bottom }\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 121,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 1,
+						"name": "SnackbarOrigin"
+					}
+				},
+				{
+					"id": 22,
+					"name": "ariaAttributes",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Aria attributes applied to snackbar's content component"
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 138,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "React.AriaAttributes"
+					}
+				},
+				{
+					"id": 20,
+					"name": "autoHideDuration",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "The number of milliseconds to wait before automatically calling the\n`onClose` function. By default snackbars get closed after 5000 milliseconds.\nSet autoHideDuration to 'null' if you don't want snackbars to automatically close.\nAlternatively pass `persist: true` in the options parameter of enqueueSnackbar.",
+						"tags": [
+							{
+								"tag": "default",
+								"text": "5000\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 129,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "number"
+							},
+							{
+								"type": "intrinsic",
+								"name": "null"
+							}
+						]
+					}
+				},
+				{
+					"id": 40,
+					"name": "className",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@material-ui/core/index.d.ts",
+							"line": 16,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 34,
+						"name": "__type.className"
+					}
+				},
+				{
+					"id": 39,
+					"name": "classes",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Override or extend the styles applied to the component."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@material-ui/core/styles/index.d.ts",
+							"line": 54,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "reference",
+								"id": 171,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"name": "HTMLDivElement"
+											}
+										],
+										"name": "HTMLAttributes"
+									}
+								],
+								"name": "ClassNameMap"
+							}
+						],
+						"name": "Partial"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 39,
+						"name": "StyledComponentProps.classes"
+					}
+				},
+				{
+					"id": 23,
+					"name": "disableWindowBlurListener",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "If `true`, the `autoHideDuration` timer will expire even if the window is not focused.",
+						"tags": [
+							{
+								"tag": "default",
+								"text": "false\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 143,
+							"character": 29
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "false"
+							},
+							{
+								"type": "intrinsic",
+								"name": "true"
+							}
+						]
+					}
+				},
+				{
+					"id": 41,
+					"name": "ref",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@material-ui/core/index.d.ts",
+							"line": 17,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "conditional",
+						"checkType": {
+							"type": "typeParameter",
+							"name": "C"
+						},
+						"extendsType": {
+							"type": "reflection",
+							"declaration": {
+								"id": 42,
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {
+									"isExported": true
+								},
+								"children": [
+									{
+										"id": 43,
+										"name": "ref",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {
+											"isExported": true,
+											"isOptional": true
+										},
+										"sources": [
+											{
+												"fileName": "node_modules/@material-ui/core/index.d.ts",
+												"line": 17,
+												"character": 27
+											}
+										],
+										"type": {
+											"type": "inferred",
+											"name": "RefType"
+										}
+									}
+								],
+								"groups": [
+									{
+										"title": "Variables",
+										"kind": 32,
+										"children": [
+											43
+										]
+									}
+								],
+								"sources": [
+									{
+										"fileName": "node_modules/@material-ui/core/index.d.ts",
+										"line": 17,
+										"character": 21
+									}
+								]
+							}
+						},
+						"trueType": {
+							"type": "typeParameter",
+							"name": "RefType"
+						},
+						"falseType": {
+							"type": "reference",
+							"typeArguments": [
+								{
+									"type": "intrinsic",
+									"name": "unknown"
+								}
+							],
+							"name": "React.Ref"
+						}
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 35,
+						"name": "__type.ref"
+					}
+				},
+				{
+					"id": 24,
+					"name": "resumeHideDuration",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "The number of milliseconds to wait before dismissing after user interaction.\nIf `autoHideDuration` property isn't specified, it does nothing.\nIf `autoHideDuration` property is specified but `resumeHideDuration` isn't,\nwe use the default value.",
+						"tags": [
+							{
+								"tag": "default",
+								"text": "autoHideDuration / 2 ms.\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 151,
+							"character": 22
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "number"
+							}
+						]
+					}
+				},
+				{
+					"id": 44,
+					"name": "style",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@material-ui/core/index.d.ts",
+							"line": 18,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "React.CSSProperties"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 38,
+						"name": "__type.style"
+					}
+				},
+				{
+					"id": 26,
+					"name": "transitionDuration",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "The duration for the transition, in milliseconds.\nYou may specify the duration with an object in the following shape:\n```js\ntransitionDuration={{ enter: 300, exit: 500 }}\n```",
+						"tags": [
+							{
+								"tag": "default",
+								"text": "{ enter: 225, exit: 195 }\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 165,
+							"character": 22
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 27,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {
+										"isExported": true
+									},
+									"children": [
+										{
+											"id": 28,
+											"name": "appear",
+											"kind": 32,
+											"kindString": "Variable",
+											"flags": {
+												"isExported": true,
+												"isOptional": true
+											},
+											"sources": [
+												{
+													"fileName": "src/index.d.ts",
+													"line": 165,
+													"character": 33
+												}
+											],
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "undefined"
+													},
+													{
+														"type": "intrinsic",
+														"name": "number"
+													}
+												]
+											}
+										},
+										{
+											"id": 29,
+											"name": "enter",
+											"kind": 32,
+											"kindString": "Variable",
+											"flags": {
+												"isExported": true,
+												"isOptional": true
+											},
+											"sources": [
+												{
+													"fileName": "src/index.d.ts",
+													"line": 165,
+													"character": 49
+												}
+											],
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "undefined"
+													},
+													{
+														"type": "intrinsic",
+														"name": "number"
+													}
+												]
+											}
+										},
+										{
+											"id": 30,
+											"name": "exit",
+											"kind": 32,
+											"kindString": "Variable",
+											"flags": {
+												"isExported": true,
+												"isOptional": true
+											},
+											"sources": [
+												{
+													"fileName": "src/index.d.ts",
+													"line": 165,
+													"character": 64
+												}
+											],
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "undefined"
+													},
+													{
+														"type": "intrinsic",
+														"name": "number"
+													}
+												]
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Variables",
+											"kind": 32,
+											"children": [
+												28,
+												29,
+												30
+											]
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						25,
+						31,
+						19,
+						22,
+						20,
+						40,
+						39,
+						23,
+						41,
+						24,
+						44,
+						26
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 116,
+					"character": 30
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "intersection",
+					"types": [
+						{
+							"type": "reflection",
+							"declaration": {
+								"id": 32,
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {
+									"isExported": true
+								}
+							}
+						},
+						{
+							"type": "reference",
+							"typeArguments": [
+								{
+									"type": "union",
+									"types": [
+										{
+											"type": "stringLiteral",
+											"value": "root"
+										},
+										{
+											"type": "stringLiteral",
+											"value": "anchorOriginTopCenter"
+										},
+										{
+											"type": "stringLiteral",
+											"value": "anchorOriginBottomCenter"
+										},
+										{
+											"type": "stringLiteral",
+											"value": "anchorOriginTopRight"
+										},
+										{
+											"type": "stringLiteral",
+											"value": "anchorOriginBottomRight"
+										},
+										{
+											"type": "stringLiteral",
+											"value": "anchorOriginTopLeft"
+										},
+										{
+											"type": "stringLiteral",
+											"value": "anchorOriginBottomLeft"
+										}
+									]
+								}
+							],
+							"name": "StyledComponentProps"
+						},
+						{
+							"type": "reflection",
+							"declaration": {
+								"id": 33,
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {
+									"isExported": true
+								},
+								"children": [
+									{
+										"id": 34,
+										"name": "className",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {
+											"isExported": true,
+											"isOptional": true
+										},
+										"sources": [
+											{
+												"fileName": "node_modules/@material-ui/core/index.d.ts",
+												"line": 16,
+												"character": 15
+											}
+										],
+										"type": {
+											"type": "union",
+											"types": [
+												{
+													"type": "intrinsic",
+													"name": "undefined"
+												},
+												{
+													"type": "intrinsic",
+													"name": "string"
+												}
+											]
+										}
+									},
+									{
+										"id": 35,
+										"name": "ref",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {
+											"isExported": true,
+											"isOptional": true
+										},
+										"sources": [
+											{
+												"fileName": "node_modules/@material-ui/core/index.d.ts",
+												"line": 17,
+												"character": 9
+											}
+										],
+										"type": {
+											"type": "conditional",
+											"checkType": {
+												"type": "typeParameter",
+												"name": "C"
+											},
+											"extendsType": {
+												"type": "reflection",
+												"declaration": {
+													"id": 36,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"children": [
+														{
+															"id": 37,
+															"name": "ref",
+															"kind": 32,
+															"kindString": "Variable",
+															"flags": {
+																"isExported": true,
+																"isOptional": true
+															},
+															"sources": [
+																{
+																	"fileName": "node_modules/@material-ui/core/index.d.ts",
+																	"line": 17,
+																	"character": 27
+																}
+															],
+															"type": {
+																"type": "inferred",
+																"name": "RefType"
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Variables",
+															"kind": 32,
+															"children": [
+																37
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "node_modules/@material-ui/core/index.d.ts",
+															"line": 17,
+															"character": 21
+														}
+													]
+												}
+											},
+											"trueType": {
+												"type": "typeParameter",
+												"name": "RefType"
+											},
+											"falseType": {
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "intrinsic",
+														"name": "unknown"
+													}
+												],
+												"name": "React.Ref"
+											}
+										}
+									},
+									{
+										"id": 38,
+										"name": "style",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {
+											"isExported": true,
+											"isOptional": true
+										},
+										"sources": [
+											{
+												"fileName": "node_modules/@material-ui/core/index.d.ts",
+												"line": 18,
+												"character": 11
+											}
+										],
+										"type": {
+											"type": "reference",
+											"name": "React.CSSProperties"
+										}
+									}
+								],
+								"groups": [
+									{
+										"title": "Variables",
+										"kind": 32,
+										"children": [
+											34,
+											35,
+											38
+										]
+									}
+								]
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 59,
+			"name": "SnackbarProviderProps",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"comment": {
+				"shortText": "All material-ui props, including class keys for notistack and material-ui with additional notistack props"
+			},
+			"children": [
+				{
+					"id": 71,
+					"name": "action",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Callback used for getting action(s). actions are mostly buttons displayed in Snackbar.",
+						"tags": [
+							{
+								"tag": "param",
+								"text": "key of a snackbar\n",
+								"param": "key"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 196,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 183,
+						"name": "SnackbarAction"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 49,
+						"name": "SharedProps.action"
+					}
+				},
+				{
+					"id": 60,
+					"name": "children",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Most of the time this is your App. every component from this point onward\nwill be able to show snackbars."
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 224,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"name": "React.ReactNode"
+							},
+							{
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "React.ReactNode"
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": 65,
+					"name": "classes",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Override or extend the styles applied to the container component or Snackbars."
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 247,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "reference",
+								"id": 171,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"id": 211,
+										"name": "CombinedClassKey"
+									}
+								],
+								"name": "ClassNameMap"
+							}
+						],
+						"name": "Partial"
+					}
+				},
+				{
+					"id": 70,
+					"name": "content",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Replace the snackbar. Callback used for displaying entirely customized snackbar.",
+						"tags": [
+							{
+								"tag": "param",
+								"text": "key of a snackbar\n",
+								"param": "key"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 191,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 187,
+						"name": "SnackbarContentCallback"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 48,
+						"name": "SharedProps.content"
+					}
+				},
+				{
+					"id": 61,
+					"name": "dense",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Denser margins for snackbars. Recommended to be used on mobile devices.",
+						"tags": [
+							{
+								"tag": "default",
+								"text": "false\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 229,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "false"
+							},
+							{
+								"type": "intrinsic",
+								"name": "true"
+							}
+						]
+					}
+				},
+				{
+					"id": 64,
+					"name": "domRoot",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Valid and exist HTML Node element, used to target `ReactDOM.createPortal`"
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 243,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "HTMLElement"
+					}
+				},
+				{
+					"id": 63,
+					"name": "hideIconVariant",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Hides iconVariant if set to `true`.",
+						"tags": [
+							{
+								"tag": "default",
+								"text": "false\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 239,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "false"
+							},
+							{
+								"type": "intrinsic",
+								"name": "true"
+							}
+						]
+					}
+				},
+				{
+					"id": 66,
+					"name": "iconVariant",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Little icon that is displayed at left corner of a snackbar."
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 251,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "reference",
+								"id": 4,
+								"name": "IconVariant"
+							}
+						],
+						"name": "Partial"
+					}
+				},
+				{
+					"id": 62,
+					"name": "maxSnack",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Maximum snackbars that can be stacked on top of one another.",
+						"tags": [
+							{
+								"tag": "default",
+								"text": "3\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 234,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "number"
+							}
+						]
+					}
+				},
+				{
+					"id": 69,
+					"name": "preventDuplicate",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Ignores displaying multiple snackbars with the same `message`",
+						"tags": [
+							{
+								"tag": "default",
+								"text": "false\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 186,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "false"
+							},
+							{
+								"type": "intrinsic",
+								"name": "true"
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 47,
+						"name": "SharedProps.preventDuplicate"
+					}
+				},
+				{
+					"id": 68,
+					"name": "variant",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Used to easily display different variant of snackbars. When passed to `SnackbarProvider`\nall snackbars inherit the `variant`, unless you override it in `enqueueSnackbar` options.",
+						"tags": [
+							{
+								"tag": "default",
+								"text": "default\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 181,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 180,
+						"name": "VariantType"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 46,
+						"name": "SharedProps.variant"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						71,
+						60,
+						65,
+						70,
+						61,
+						64,
+						63,
+						66,
+						62,
+						69,
+						68
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 219,
+					"character": 38
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"id": 45,
+					"name": "SharedProps"
+				}
+			]
+		},
+		{
+			"id": 10,
+			"name": "TransitionHandlerProps",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"comment": {},
+			"children": [
+				{
+					"id": 11,
+					"name": "onClose",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Callback fired before snackbar requests to get closed.\nThe `reason` parameter can optionally be used to control the response to `onClose`.",
+						"tags": [
+							{
+								"tag": "param",
+								"text": "The event source of the callback",
+								"param": "event"
+							},
+							{
+								"tag": "param",
+								"text": "Can be:`\"timeout\"` (`autoHideDuration` expired) or: `\"clickaway\"`\n or: `\"maxsnack\"` (snackbar was closed because `maxSnack` has reached) or: `\"instructed\"`\n(snackbar was closed programmatically)",
+								"param": "reason"
+							},
+							{
+								"tag": "param",
+								"text": "key of a Snackbar. key will be `undefined` if closeSnackbar\nis called with no key (user requested all the snackbars to be closed)\n",
+								"param": "key"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 84,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 192,
+						"name": "TransitionCloseHandler"
+					}
+				},
+				{
+					"id": 12,
+					"name": "onEnter",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Callback fired before the transition is entering."
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 88,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 204,
+						"name": "TransitionHandler"
+					}
+				},
+				{
+					"id": 14,
+					"name": "onEntered",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Callback fired when the transition has entered."
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 96,
+							"character": 13
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 198,
+						"name": "TransitionEnterHandler"
+					}
+				},
+				{
+					"id": 13,
+					"name": "onEntering",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Callback fired when the transition is entering."
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 92,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 204,
+						"name": "TransitionHandler"
+					}
+				},
+				{
+					"id": 15,
+					"name": "onExit",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Callback fired before the transition is exiting."
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 100,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 204,
+						"name": "TransitionHandler"
+					}
+				},
+				{
+					"id": 17,
+					"name": "onExited",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Callback fired when the transition has exited."
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 108,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 204,
+						"name": "TransitionHandler"
+					}
+				},
+				{
+					"id": 16,
+					"name": "onExiting",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Callback fired when the transition is exiting."
+					},
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 104,
+							"character": 13
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 204,
+						"name": "TransitionHandler"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						11,
+						12,
+						14,
+						13,
+						15,
+						17,
+						16
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 72,
+					"character": 39
+				}
+			]
+		},
+		{
+			"id": 171,
+			"name": "ClassNameMap",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"typeParameter": [
+				{
+					"id": 172,
+					"name": "ClassKey",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {
+						"isExported": true
+					},
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 11,
+					"character": 24
+				}
+			],
+			"type": {
+				"type": "reference",
+				"typeArguments": [
+					{
+						"type": "typeParameter",
+						"name": "ClassKey",
+						"constraint": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					},
+					{
+						"type": "intrinsic",
+						"name": "string"
+					}
+				],
+				"name": "Record"
+			}
+		},
+		{
+			"id": 181,
+			"name": "CloseReason",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 17,
+					"character": 23
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "stringLiteral",
+						"value": "timeout"
+					},
+					{
+						"type": "stringLiteral",
+						"value": "clickaway"
+					},
+					{
+						"type": "stringLiteral",
+						"value": "maxsnack"
+					},
+					{
+						"type": "stringLiteral",
+						"value": "instructed"
+					}
+				]
+			}
+		},
+		{
+			"id": 211,
+			"name": "CombinedClassKey",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 39,
+					"character": 28
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reference",
+						"id": 210,
+						"name": "VariantClassKey"
+					},
+					{
+						"type": "reference",
+						"id": 209,
+						"name": "ContainerClassKey"
+					},
+					{
+						"type": "reference",
+						"name": "SnackbarClassKey"
+					}
+				]
+			}
+		},
+		{
+			"id": 209,
+			"name": "ContainerClassKey",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 29,
+					"character": 29
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "stringLiteral",
+						"value": "containerRoot"
+					},
+					{
+						"type": "stringLiteral",
+						"value": "containerAnchorOriginTopCenter"
+					},
+					{
+						"type": "stringLiteral",
+						"value": "containerAnchorOriginBottomCenter"
+					},
+					{
+						"type": "stringLiteral",
+						"value": "containerAnchorOriginTopRight"
+					},
+					{
+						"type": "stringLiteral",
+						"value": "containerAnchorOriginBottomRight"
+					},
+					{
+						"type": "stringLiteral",
+						"value": "containerAnchorOriginTopLeft"
+					},
+					{
+						"type": "stringLiteral",
+						"value": "containerAnchorOriginBottomLeft"
+					}
+				]
+			}
+		},
+		{
+			"id": 176,
+			"name": "Modify",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"typeParameter": [
+				{
+					"id": 177,
+					"name": "T",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {
+						"isExported": true
+					}
+				},
+				{
+					"id": 178,
+					"name": "R",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {
+						"isExported": true
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 13,
+					"character": 11
+				}
+			],
+			"type": {
+				"type": "intersection",
+				"types": [
+					{
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "typeParameter",
+								"name": "T"
+							},
+							{
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "typeOperator",
+										"operator": "keyof",
+										"target": {
+											"type": "typeParameter",
+											"name": "T"
+										}
+									},
+									{
+										"type": "typeOperator",
+										"operator": "keyof",
+										"target": {
+											"type": "typeParameter",
+											"name": "R"
+										}
+									}
+								],
+								"name": "Exclude"
+							}
+						],
+						"name": "Pick"
+					},
+					{
+						"type": "typeParameter",
+						"name": "R"
+					}
+				]
+			}
+		},
+		{
+			"id": 173,
+			"name": "Omit",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"typeParameter": [
+				{
+					"id": 174,
+					"name": "T",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {
+						"isExported": true
+					}
+				},
+				{
+					"id": 175,
+					"name": "K",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {
+						"isExported": true
+					},
+					"type": {
+						"type": "typeOperator",
+						"operator": "keyof",
+						"target": {
+							"type": "typeParameter",
+							"name": "T"
+						}
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 12,
+					"character": 9
+				}
+			],
+			"type": {
+				"type": "reference",
+				"typeArguments": [
+					{
+						"type": "typeParameter",
+						"name": "T"
+					},
+					{
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "typeOperator",
+								"operator": "keyof",
+								"target": {
+									"type": "typeParameter",
+									"name": "T"
+								}
+							},
+							{
+								"type": "typeParameter",
+								"name": "K",
+								"constraint": {
+									"type": "typeOperator",
+									"operator": "keyof",
+									"target": {
+										"type": "typeParameter",
+										"name": "T"
+									}
+								}
+							}
+						],
+						"name": "Exclude"
+					}
+				],
+				"name": "Pick"
+			}
+		},
+		{
+			"id": 168,
+			"name": "RequiredBy",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"typeParameter": [
+				{
+					"id": 169,
+					"name": "T",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {
+						"isExported": true
+					}
+				},
+				{
+					"id": 170,
+					"name": "K",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {
+						"isExported": true
+					},
+					"type": {
+						"type": "typeOperator",
+						"operator": "keyof",
+						"target": {
+							"type": "typeParameter",
+							"name": "T"
+						}
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 10,
+					"character": 22
+				}
+			],
+			"type": {
+				"type": "intersection",
+				"types": [
+					{
+						"type": "reference",
+						"id": 173,
+						"typeArguments": [
+							{
+								"type": "typeParameter",
+								"name": "T"
+							},
+							{
+								"type": "typeParameter",
+								"name": "K",
+								"constraint": {
+									"type": "typeOperator",
+									"operator": "keyof",
+									"target": {
+										"type": "typeParameter",
+										"name": "T"
+									}
+								}
+							}
+						],
+						"name": "Omit"
+					},
+					{
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "typeParameter",
+										"name": "T"
+									},
+									{
+										"type": "typeParameter",
+										"name": "K",
+										"constraint": {
+											"type": "typeOperator",
+											"operator": "keyof",
+											"target": {
+												"type": "typeParameter",
+												"name": "T"
+											}
+										}
+									}
+								],
+								"name": "Pick"
+							}
+						],
+						"name": "Required"
+					}
+				]
+			}
+		},
+		{
+			"id": 183,
+			"name": "SnackbarAction",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 20,
+					"character": 26
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reference",
+						"name": "React.ReactNode"
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 184,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 185,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 186,
+											"name": "key",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "reference",
+												"id": 179,
+												"name": "SnackbarKey"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "React.ReactNode"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.d.ts",
+									"line": 20,
+									"character": 46
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": 187,
+			"name": "SnackbarContentCallback",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 21,
+					"character": 35
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reference",
+						"name": "React.ReactNode"
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 188,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 189,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 190,
+											"name": "key",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "reference",
+												"id": 179,
+												"name": "SnackbarKey"
+											}
+										},
+										{
+											"id": 191,
+											"name": "message",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "reference",
+												"id": 182,
+												"name": "SnackbarMessage"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "React.ReactNode"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.d.ts",
+									"line": 21,
+									"character": 55
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": 212,
+			"name": "SnackbarContentProps",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 111,
+					"character": 32
+				}
+			],
+			"type": {
+				"type": "reference",
+				"typeArguments": [
+					{
+						"type": "reference",
+						"name": "HTMLDivElement"
+					}
+				],
+				"name": "HTMLAttributes"
+			}
+		},
+		{
+			"id": 179,
+			"name": "SnackbarKey",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 15,
+					"character": 23
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "intrinsic",
+						"name": "string"
+					},
+					{
+						"type": "intrinsic",
+						"name": "number"
+					}
+				]
+			}
+		},
+		{
+			"id": 182,
+			"name": "SnackbarMessage",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 19,
+					"character": 27
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "intrinsic",
+						"name": "string"
+					},
+					{
+						"type": "reference",
+						"name": "React.ReactNode"
+					}
+				]
+			}
+		},
+		{
+			"id": 192,
+			"name": "TransitionCloseHandler",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 25,
+					"character": 34
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 193,
+					"name": "__type",
+					"kind": 65536,
+					"kindString": "Type literal",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 194,
+							"name": "__call",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 195,
+									"name": "event",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "intrinsic",
+														"name": "any"
+													}
+												],
+												"name": "SyntheticEvent"
+											},
+											{
+												"type": "intrinsic",
+												"name": "null"
+											}
+										]
+									}
+								},
+								{
+									"id": 196,
+									"name": "reason",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"id": 181,
+										"name": "CloseReason"
+									}
+								},
+								{
+									"id": 197,
+									"name": "key",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true,
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"id": 179,
+										"name": "SnackbarKey"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 25,
+							"character": 36
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": 198,
+			"name": "TransitionEnterHandler",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 26,
+					"character": 34
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 199,
+					"name": "__type",
+					"kind": 65536,
+					"kindString": "Type literal",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 200,
+							"name": "__call",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 201,
+									"name": "node",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "HTMLElement"
+									}
+								},
+								{
+									"id": 202,
+									"name": "isAppearing",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								},
+								{
+									"id": 203,
+									"name": "key",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"id": 179,
+										"name": "SnackbarKey"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 26,
+							"character": 36
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": 204,
+			"name": "TransitionHandler",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 27,
+					"character": 29
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 205,
+					"name": "__type",
+					"kind": 65536,
+					"kindString": "Type literal",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 206,
+							"name": "__call",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 207,
+									"name": "node",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "HTMLElement"
+									}
+								},
+								{
+									"id": 208,
+									"name": "key",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"id": 179,
+										"name": "SnackbarKey"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/index.d.ts",
+							"line": 27,
+							"character": 31
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": 210,
+			"name": "VariantClassKey",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 38,
+					"character": 27
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "stringLiteral",
+						"value": "variantSuccess"
+					},
+					{
+						"type": "stringLiteral",
+						"value": "variantError"
+					},
+					{
+						"type": "stringLiteral",
+						"value": "variantInfo"
+					},
+					{
+						"type": "stringLiteral",
+						"value": "variantWarning"
+					}
+				]
+			}
+		},
+		{
+			"id": 180,
+			"name": "VariantType",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 16,
+					"character": 23
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "stringLiteral",
+						"value": "default"
+					},
+					{
+						"type": "stringLiteral",
+						"value": "error"
+					},
+					{
+						"type": "stringLiteral",
+						"value": "success"
+					},
+					{
+						"type": "stringLiteral",
+						"value": "warning"
+					},
+					{
+						"type": "stringLiteral",
+						"value": "info"
+					}
+				]
+			}
+		},
+		{
+			"id": 222,
+			"name": "WithSnackbarProps",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 277,
+					"character": 29
+				}
+			],
+			"type": {
+				"type": "reference",
+				"id": 158,
+				"name": "ProviderContext"
+			}
+		},
+		{
+			"id": 219,
+			"name": "SnackbarContent",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 272,
+					"character": 36
+				}
+			],
+			"type": {
+				"type": "reference",
+				"typeArguments": [
+					{
+						"type": "intersection",
+						"types": [
+							{
+								"type": "reference",
+								"id": 212,
+								"name": "SnackbarContentProps"
+							},
+							{
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"name": "HTMLDivElement"
+									}
+								],
+								"name": "RefAttributes"
+							}
+						]
+					}
+				],
+				"name": "React.ComponentType"
+			}
+		},
+		{
+			"id": 220,
+			"name": "useSnackbar",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 221,
+					"name": "useSnackbar",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"type": {
+						"type": "reference",
+						"id": 158,
+						"name": "ProviderContext"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 274,
+					"character": 27
+				}
+			]
+		},
+		{
+			"id": 213,
+			"name": "withSnackbar",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 214,
+					"name": "withSnackbar",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"typeParameter": [
+						{
+							"id": 215,
+							"name": "P",
+							"kind": 131072,
+							"kindString": "Type parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "reference",
+								"id": 158,
+								"name": "ProviderContext"
+							}
+						}
+					],
+					"parameters": [
+						{
+							"id": 216,
+							"name": "component",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "typeParameter",
+										"name": "P",
+										"constraint": {
+											"type": "reference",
+											"id": 158,
+											"name": "ProviderContext"
+										}
+									}
+								],
+								"name": "React.ComponentType"
+							}
+						}
+					],
+					"type": {
+						"type": "intersection",
+						"types": [
+							{
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"id": 173,
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "P",
+												"constraint": {
+													"type": "reference",
+													"id": 158,
+													"name": "ProviderContext"
+												}
+											},
+											{
+												"type": "typeOperator",
+												"operator": "keyof",
+												"target": {
+													"type": "reference",
+													"id": 158,
+													"name": "ProviderContext"
+												}
+											}
+										],
+										"name": "Omit"
+									}
+								],
+								"name": "ComponentClass"
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 217,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {
+										"isExported": true
+									},
+									"children": [
+										{
+											"id": 218,
+											"name": "WrappedComponent",
+											"kind": 32,
+											"kindString": "Variable",
+											"flags": {
+												"isExported": true
+											},
+											"sources": [
+												{
+													"fileName": "src/index.d.ts",
+													"line": 270,
+													"character": 77
+												}
+											],
+											"type": {
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "typeParameter",
+														"name": "P",
+														"constraint": {
+															"type": "reference",
+															"id": 158,
+															"name": "ProviderContext"
+														}
+													}
+												],
+												"name": "React.ComponentType"
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Variables",
+											"kind": 32,
+											"children": [
+												218
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "src/index.d.ts",
+											"line": 270,
+											"character": 58
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.d.ts",
+					"line": 269,
+					"character": 28
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Classes",
+			"kind": 128,
+			"children": [
+				72
+			]
+		},
+		{
+			"title": "Interfaces",
+			"kind": 256,
+			"children": [
+				4,
+				52,
+				158,
+				45,
+				1,
+				18,
+				59,
+				10
+			],
+			"categories": [
+				{
+					"title": "Enqueue",
+					"children": [
+						52
+					]
+				},
+				{
+					"title": "Other",
+					"children": [
+						4,
+						158,
+						1
+					]
+				},
+				{
+					"title": "Provider",
+					"children": [
+						59
+					]
+				},
+				{
+					"title": "Shared",
+					"children": [
+						45,
+						18,
+						10
+					]
+				}
+			]
+		},
+		{
+			"title": "Type aliases",
+			"kind": 4194304,
+			"children": [
+				171,
+				181,
+				211,
+				209,
+				176,
+				173,
+				168,
+				183,
+				187,
+				212,
+				179,
+				182,
+				192,
+				198,
+				204,
+				210,
+				180,
+				222
+			]
+		},
+		{
+			"title": "Variables",
+			"kind": 32,
+			"children": [
+				219
+			]
+		},
+		{
+			"title": "Functions",
+			"kind": 64,
+			"children": [
+				220,
+				213
+			]
+		}
+	]
+}

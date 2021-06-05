@@ -2,6 +2,7 @@
   "name": "@kevinamiri/notistack",
   "version": "1.0.9",
   "description": "Highly customizable notification snackbars (toasts) that can be stacked on top of each other",
+  "author": "kevin amiri",
   "main": "dist/index.js",
   "module": "dist/notistack.esm.js",
   "types": "dist/index.d.ts",
